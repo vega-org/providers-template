@@ -7,5 +7,14 @@
     "type": "global",
     "hasSettings": true,
     "disabled": false
+  },
+  {
+    "display_name": "PeerTube",
+    "value": "peertube",
+    "version": "1.0",
+    "icon": "https://cdn.jsdelivr.net/gh/Tanzeel0Hussain/vega-providers@main/assets/peertube.png",
+    "type": "global",
+    "hasSettings": true,
+    "disabled": false
   }
 ]
