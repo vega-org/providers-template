@@ -569,3 +569,8 @@ Use this method when developing the Vega app itself or when you need its test-mo
 This workflow allows you to quickly test and debug new providers before deploying them.
 
 Follow this structure and naming convention to ensure your provider integrates smoothly with the project.
+
+## DRM streams
+
+Providers can return `Stream.drm` for inline ClearKey or license-server DRM.
+See [DRM configuration, examples, and platform limits](docs/provider-drm.md).

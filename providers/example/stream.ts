@@ -15,8 +15,11 @@ export const getStream = async function ({
 }): Promise<Stream[]> {
   // Use the link to fetch streaming sources
   // If isDownload is true, you can place download-friendly/fast direct servers at the top.
-  // Always return all available servers; the app uses the 1st server for quick download
+  // Omit streams with drm when isDownload is true (DRM playback is online-only).
+  // Return all applicable servers; the app uses the 1st server for quick download
   // or lets the user choose from all returned servers in the download dialog.
+  // For ClearKey and license-server DRM examples, see docs/provider-drm.md.
+  // Add optional drm to a Stream result; no native DRM imports are needed here.
   return [
     {
       server: "ExampleServer",
