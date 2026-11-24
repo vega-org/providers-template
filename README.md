@@ -78,6 +78,7 @@ The `manifest.json` file located in the root of the repository defines the metad
 - **`icon`**: An optional URL to an icon image for your provider.
 - **`type`**: The scope of your provider (usually set to `"global"`).
 - **`disabled`**: If set to `true`, the app will hide and disable this provider.
+- **`adult`**: Optional boolean. Set `"adult": true` for providers intended for adults only. Compatible Vega Mobile builds show an **18+** badge and honor **Settings → Preferences → Hide 18+ providers**. Omitted values are unflagged.
 
 **Important:** Every time you add a new provider folder to `providers/`, you **must** add a corresponding entry to `manifest.json`!
 
