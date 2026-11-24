@@ -1,4 +1,9 @@
-import { Post, ProviderContext } from "../types";
+import type { Post, PostPreview, ProviderContext } from "../types";
+
+const demoPreview: PostPreview = {
+  url: "https://mdn.github.io/shared-assets/videos/flower.mp4",
+  type: "video",
+};
 
 export const getPosts = async function ({
   filter,
@@ -20,6 +25,7 @@ export const getPosts = async function ({
       title: "Example Post 1",
       link: "https://example.com/post-1",
       image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba",
+      preview: demoPreview,
     },
     {
       title: "Example Post 2",
@@ -48,6 +54,7 @@ export const getSearchPosts = async function ({
       title: `Search Result for ${searchQuery}`,
       link: "https://example.com/search-result",
       image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba",
+      preview: demoPreview,
     },
   ];
 };

@@ -107,6 +107,7 @@ The `manifest.json` file located in the root of the repository defines the metad
 - **Exports:**
   - `getPosts({ filter, page, providerValue, signal, providerContext })`: Returns an array of `Post` objects for a given filter and page.
   - `getSearchPosts({ searchQuery, page, providerValue, signal, providerContext })`: (optional) Returns search results as an array of `Post` objects.
+- **Hold to preview:** Return an optional `Post.preview` for a short provider-supplied video or animated image. The example provider includes a demo clip. See [the provider preview contract](docs/hold-to-preview.md).
 
 ### 4. `stream.ts`
 
